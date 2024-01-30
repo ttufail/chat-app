@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Use 100% of the viewport height */
+}
+
+.login-form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 400px; /* Adjust the width as needed */
+  margin: auto; /* Center the chat container */
+}
+
+.chat-message {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 5px;
+  max-width: 80%; /* Adjust the width as needed */
+}
+
+.chat-message.left {
+  align-self: flex-start;
+}
+
+.chat-message.right {
+  align-self: flex-end;
+}
+
+.app {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chat-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
