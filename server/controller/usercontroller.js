@@ -4,6 +4,7 @@ const createNewUser = async (req, res) => {
     try {
 
         const { userEmail, userPassword } = req.body
+        console.log("🚀 ~ createNewUser ~ req.body:", req.body)
 
         if (!userEmail || !userPassword) {
             return res.status(400).send("Invalid Credentials")
